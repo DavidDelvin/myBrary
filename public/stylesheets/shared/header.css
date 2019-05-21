@@ -1,0 +1,41 @@
+:root {
+  --nav-title-font-size: 2em;
+  --nav-title-font-weight: bold;
+  --header-background-color: #333;
+  --nav-link-font-weight: 300;
+}
+
+.header {
+  background: var(--header-background-color);
+  padding: 0 1rem;
+}
+
+.header-title {
+  font-size: var(--nav-title-font-size);
+  font-weight: var(--nav-title-font-weight);
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 1rem 0;
+}
+
+.header-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav ul li {
+  font-weight: var(--nav-link-font-weight);
+  padding: 1rem;
+}
+
+.header-nav li a:hover,
+.header-title:hover {
+  color: #aaa;
+}

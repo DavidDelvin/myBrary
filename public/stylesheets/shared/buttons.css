@@ -1,0 +1,43 @@
+:root {
+  --color-btn-primary: #fff;
+  --color-btn-primary-background: #fda500;
+  --color-btn-danger-background: rgb(247, 66, 66);
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}
+
+.btn-primary {
+  color: var(--color-btn-primary);
+  background: var(--color-btn-primary-background);
+}
+
+.btn-secondary {
+  color: var(--color-btn-primary-background);
+  background: var(--color-btn-primary);
+}
+
+.btn-danger {
+  color: var(--color-btn-primary);
+  background: var(--color-btn-danger-background);
+}
+
+.btn-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.btn-row > * {
+  margin-left: 1rem;
+}
+
+.btn-row > *:first-child {
+  margin-left: 0rem;
+}
